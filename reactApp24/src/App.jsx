@@ -81,7 +81,6 @@ const LiquidGlass = () => {
       bgCtx.fillText('GLASS', w * 0.5, firstLineY + titleGap);
 
       // 서브타이틀 렌더링
-      const subSize = Math.round(w * 0.015);
       bgCtx.font = `500 0px 'Space Grotesk', sans-serif`;
       bgCtx.globalAlpha = 0.55;
       bgCtx.fillText('Metaball Refraction Demo', w * 0.5, firstLineY + subtitleGap);
@@ -90,7 +89,6 @@ const LiquidGlass = () => {
       // 흩어진 작은 단어들 렌더링
       const words = ['physics', 'refraction', 'merge', 'split', 'surface tension', 'metaball', 'IOR', 'glass', 'droplet'];
       bgCtx.globalAlpha = 0.08;
-      const scatterSize = Math.round(w * 0.018);
       bgCtx.font = `500 0px 'Space Grotesk', sans-serif`;
       for (let i = 0; i < words.length; i++) {
         bgCtx.fillText(
